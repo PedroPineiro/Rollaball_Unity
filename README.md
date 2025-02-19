@@ -1,8 +1,8 @@
-﻿# 🎮 Rollaball - Unity Game
+﻿# Rollaball_Unity - Pedro Piñeiro Ordax 
 
 Rollaball es un juego en Unity donde controlas una esfera que debe recolectar objetos (pickups) mientras evitas enemigos y obstáculos. El juego incluye una cámara en primera y tercera persona, un sistema de detección de colisiones y enemigos que persiguen al jugador.
 
-## 🚀 Características del Juego
+## Características del Juego
 
 - Movimiento fluido del jugador con teclado o giroscopio.
 - Alternancia entre vista en primera y tercera persona.
@@ -38,8 +38,7 @@ Rollaball es un juego en Unity donde controlas una esfera que debe recolectar ob
 ### Juego Completo
 ![img8.png](imgs/img8.png)
 
-
-## 📜 Scripts del Proyecto
+## Scripts del Proyecto
 
 ### `PlayerController.cs`
 Controla el movimiento del jugador y la interacción con el entorno:
@@ -67,6 +66,18 @@ Define el comportamiento de los enemigos:
 
 - Utiliza `NavMeshAgent` para que los enemigos sigan al jugador.
 - Actualiza la posición objetivo del enemigo en cada frame para perseguir al jugador.
+
+### `BoostRampa.cs`
+Maneja una rampa de impulso:
+
+- Si el jugador entra en contacto con la rampa (`OnTriggerEnter`), se le aplica una fuerza en una dirección específica.
+- Usa `AddForce` en el `Rigidbody` del jugador con el modo `Impulse` para darle un salto repentino.
+
+### `Rotator.cs`
+Hace que los objetos giren constantemente:
+
+- En cada `Update()`, rota el objeto 30 grados por segundo en el eje Y (`transform.Rotate(0, 30 * Time.deltaTime, 0)`).
+- Se puede usar en pickups u otros elementos visuales.
 
 ## Controles
 
