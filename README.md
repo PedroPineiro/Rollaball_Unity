@@ -25,15 +25,15 @@ Rollaball es un juego en Unity donde controlas una esfera que debe recolectar ob
 #### Objetivo: Recoger todos los pickups (10)
 ![img3.png](imgs/img3.png)
 
+#### Al recogerlos se abre esa valla y deja disponible la rampa que boostea al jugador hacia el final
+![img7.png](imgs/img7.png)
+
 ### Final
 #### Objetivo: Tocar el cofre
 ![img4.png](imgs/img4.png)
 
 ### Enemigo y Player
 ![img6.png](imgs/img6.png)
-
-### Rampa Boost
-![img7.png](imgs/img7.png)
 
 ### Juego Completo
 ![img8.png](imgs/img8.png)
